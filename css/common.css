@@ -266,7 +266,7 @@ body {
 
 .social-icon-link:hover,
 .social-icon-link:focus {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 .social-icon {
   fill: currentColor;
