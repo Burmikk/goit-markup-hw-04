@@ -10,11 +10,18 @@
 /* Hero */
 
 .hero {
-  background-color: #2f303a;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  background-color: #c4c4c4;
   text-align: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background/img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.hero.container {
+.hero-box {
   padding-top: 200px;
   padding-bottom: 280px;
 }
@@ -52,6 +59,7 @@
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 }
 .btn:focus,
 .btn:hover {
@@ -68,6 +76,20 @@
 }
 
 /* Features */
+
+.fetures-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.features-icon {
+  display: block;
+}
 
 .features-section {
   padding-top: 94px;
@@ -114,6 +136,9 @@
 /* Section Our team */
 
 .team {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
   background-color: #f5f4fa;
 }
 
@@ -159,4 +184,75 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Team icon */
+.team-icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.team-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--prmary-icon-color);
+  background-color: #ffffff;
+}
+
+.team-icon-link:hover,
+.team-icon-link:focus {
+  color: var(--primary-white-color);
+
+  background-color: var(--accent-color);
+}
+
+.team-icon {
+  fill: currentColor;
+}
+
+/* Clients */
+
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+/* Clients icon */
+
+.clients-icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.clients-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  color: var(--prmary-icon-color);
+  border: 1px solid var(--prmary-icon-color);
+  border-radius: 4px;
+}
+
+.clients-icon-link:hover,
+.clients-icon-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.clients-icon {
+  fill: currentColor;
 }

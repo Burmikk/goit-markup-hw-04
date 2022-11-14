@@ -11,6 +11,7 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --primary-bg-color: #ffffff;
+  --prmary-icon-color: #afb1b8;
 }
 
 /* Reset */
@@ -103,10 +104,6 @@ body {
   color: #000000;
 }
 
-.contact {
-  margin-left: auto;
-}
-
 .site-nav,
 .contact {
   display: flex;
@@ -126,18 +123,11 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.contact-list > .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 
 .site-nav .site-nav-list + .site-nav-list {
   margin-left: 50px;
 }
 
-.contact .contact-list + .contact-list {
-  margin-left: 50px;
-}
 .site-nav .link {
   color: var(--primary-text-color);
 }
@@ -145,7 +135,32 @@ body {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
 /* Contact header */
+
+.contact {
+  margin-left: auto;
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
+}
+
+.contact .contact-list + .contact-list {
+  margin-left: 50px;
+}
+
+.contact-list .link {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+}
 
 .contact .link {
   color: var(--title-text-color);
@@ -155,9 +170,9 @@ body {
 .contact .link:focus {
   color: var(--accent-color);
 }
-
-.site-nav .link.current {
-  color: var(--accent-color);
+.contact-icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 /* Footer */
@@ -169,10 +184,22 @@ body {
 }
 
 .footer {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
+  max-width: 1600px;
   background-color: #2f303a;
 }
+
+.footer-box {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
+
+/* Footer contacts */
+
 .footer .logo {
   color: var(--primary-white-color);
 }
@@ -206,4 +233,41 @@ body {
 .footer .link:hover,
 .footer .link:focus {
   color: var(--accent-color);
+}
+
+/* Footer social */
+
+.social-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  color: #ffffff;
+}
+
+.social-icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-white-color);
+}
+
+.social-icon-link:hover,
+.social-icon-link:focus {
+  color: var(--accent-color);
+}
+.social-icon {
+  fill: currentColor;
 }
